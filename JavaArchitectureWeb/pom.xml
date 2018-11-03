@@ -31,7 +31,25 @@
 		<artifactId>JavaArchitectureGoodsMgrWeb</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	  	<type>war</type>    
-    </dependency>    
+    </dependency> 
+    <dependency>
+		<groupId>com.w3cjava</groupId>
+		<artifactId>JavaArchitectureCartMgr</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<type>war</type>    
+    </dependency>
+    <dependency>
+		<groupId>com.w3cjava</groupId>
+		<artifactId>JavaArchitectureOrderMgr</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<type>war</type>    
+    </dependency>
+    <dependency>
+		<groupId>com.w3cjava</groupId>
+		<artifactId>JavaArchitectureStoreMgr</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<type>war</type>    
+    </dependency>           
   </dependencies>
   <build>
     <finalName>JavaArchitectureWeb</finalName>
@@ -50,6 +68,18 @@
 					<groupId>com.w3cjava</groupId>
 					<artifactId>JavaArchitectureGoodsMgrWeb</artifactId>
 				</overlay>
+				<overlay>
+					<groupId>com.w3cjava</groupId>
+					<artifactId>JavaArchitectureCartMgr</artifactId>
+				</overlay>
+				<overlay>
+					<groupId>com.w3cjava</groupId>
+					<artifactId>JavaArchitectureOrderMgr</artifactId>
+				</overlay>
+				<overlay>
+					<groupId>com.w3cjava</groupId>
+					<artifactId>JavaArchitectureStoreMgr</artifactId>
+				</overlay>												
 			</overlays>
 		</configuration>
 		</plugin> 
