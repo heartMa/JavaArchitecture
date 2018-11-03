@@ -67,7 +67,6 @@
     <module>JavaArchitectureCustomerMgr</module>
     <module>JavaArchitectureGoodsMgr</module>
     <module>JavaArchitectureGoodsMgrWeb</module>
-    <module>JavaArchitectureCart</module>
     <module>JavaArchitectureCartMgr</module>
     <module>JavaArchitectureOrderMgr</module>
     <module>JavaArchitectureStoreMgr</module>
