@@ -13,8 +13,6 @@
   <packaging>war</packaging>
   <name>JavaArchitectureOrderMgr</name>
   <url>http://www.w3cjava.com</url>
-  <dependencies>
-  </dependencies>
   <build>
     <finalName>JavaArchitectureOrderMgr</finalName>
     <plugins>

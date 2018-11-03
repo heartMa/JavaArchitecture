@@ -13,8 +13,6 @@
   <packaging>war</packaging>
   <name>JavaArchitectureStoreMgr</name>
   <url>http://www.w3cjava.com</url>
-  <dependencies>
-  </dependencies>
   <build>
     <finalName>JavaArchitectureStoreMgr</finalName>
     <plugins>
