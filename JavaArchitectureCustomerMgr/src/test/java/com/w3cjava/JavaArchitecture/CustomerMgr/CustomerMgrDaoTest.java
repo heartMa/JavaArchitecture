@@ -1,5 +1,7 @@
 package com.w3cjava.JavaArchitecture.CustomerMgr;
 
+import org.junit.Before;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,13 +11,19 @@ import com.w3cjava.JavaArchitecture.CustomerMgr.dao.CustomerDAO;
 import com.w3cjava.JavaArchitecture.CustomerMgr.vo.CustomerModel;
 
 @Service
-public class SpringMybatisTest {
+public class CustomerMgrDaoTest {
 	@Autowired
 	private CustomerDAO customerDAO = null;
+	ApplicationContext ctx = null;
+	CustomerMgrDaoTest t = null;
 	
-	public static void main(String[] args) {
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
-		SpringMybatisTest t = (SpringMybatisTest)ctx.getBean("springMybatisTest");
+	@Before
+	public void before(){
+		ctx = new ClassPathXmlApplicationContext("applicationContext.xml");
+		t = (CustomerMgrDaoTest)ctx.getBean("customerMgrDaoTest");
+	}
+	@Test
+	public void testDaoCreate(){
 		CustomerModel cm = new CustomerModel();
 		cm.setCustomerId("c1");
 		cm.setPwd("c1");
@@ -23,6 +31,5 @@ public class SpringMybatisTest {
 		cm.setShowName("c1");
 		cm.setTrueName("张三");
 		t.customerDAO.create(cm);
-		
 	}
 }
